@@ -79,8 +79,9 @@ public class GreetingControllerTest {
 
     @Test
     public void greetingsWithName() throws Exception { 
-        Boolean success = true;
-        System.out.println(String.format("TECHIO> success %s", success));
+        //Boolean success = true;
+        //System.out.println(String.format("TECHIO> success %s", success));
+        System.out.println("TECHIO> open /java-project/target/www/HelloWorld.html");
         mockMvc.perform(post("/greeting").param("name","World")
                 .contentType(contentType))
                 .andExpect(status().isOk())
